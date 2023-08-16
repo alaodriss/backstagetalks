@@ -25,7 +25,7 @@ const Content = () => {
     {books.map((book) => {
         const { id, img, title, buy, select } = book;
         return (
-          <section key={id}>
+          <section key={id} >
             <Header />
             <img src={img} alt={title}/>
             <div className='buy-book'> 
