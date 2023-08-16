@@ -4,8 +4,7 @@ import RandomColor from 'randomcolor';
 import cssScrollSnapPolyfill from 'css-scroll-snap-polyfill';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-
-
+import {books} from '../../data'
 
 const Content = () => {
   useEffect(() => {
@@ -20,26 +19,26 @@ const Content = () => {
     init();
   }, []);
 
+  console.log(books[0])
   return (
     <>
-     <section>
-     <Header />
-            <h1>Section One</h1>
-      <Footer />
+    
+    {books.map((book) => {
+        const { id, img, title, buy, select } = book;
+  
+        return (
+          <section key={id}>
+            <Header />
+            <img src={img} alt={title}/>
+            <h1>{title}</h1>
+            <p>{buy}</p>
+            <span> Selected : {select}</span>
+            <Footer />
           </section>
-          <section>
-              <h1>Section Two</h1>
-          </section>
-          <section>
-              <h1>Section Three</h1>
-          </section>
-          <section>
-              <h1>Section Four</h1>
-          </section>
-          <section>
-              <h1>Section Five</h1>
-         
-          </section>
+        );
+      })}
+    
+      
     </>
   );
 };

@@ -27,3 +27,6 @@ h1	{
 	left: 0;
 	font-size: calc(1rem + 3vw);
 }
+img {
+	width: 420px;
+}
