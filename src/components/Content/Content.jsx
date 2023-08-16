@@ -22,17 +22,17 @@ const Content = () => {
   console.log(books[0])
   return (
     <>
-    
     {books.map((book) => {
         const { id, img, title, buy, select } = book;
-  
         return (
           <section key={id}>
             <Header />
             <img src={img} alt={title}/>
+            <div className='buy-book'> 
             <h1>{title}</h1>
             <p>{buy}</p>
             <span> Selected : {select}</span>
+            </div>
             <Footer />
           </section>
         );

@@ -8,12 +8,13 @@
 .infos{
     position: fixed;
     z-index: 999;
+    text-align: justify;
     bottom: 2%;
 } 
 
 p{
     color: #251d20;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     line-height: 25px;
     width: 23%;
