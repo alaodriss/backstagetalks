@@ -5,13 +5,13 @@ const Header = () => {
   return (
     <>
     <div className='header'>
-       <div className='logo'>
+     <div className='logo'>
             <img src={logo}  alt='logo' />
        </div>
        <div className='email'>
-            info@backstagetalks.com
+           <a href='info@backstagetalks.com'>info@backstagetalks.com</a> 
        </div>
-    </div>
+     </div>
     </>
   )
 }

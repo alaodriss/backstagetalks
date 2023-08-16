@@ -3,11 +3,8 @@ import './Content.css'
 import RandomColor from 'randomcolor';
 import cssScrollSnapPolyfill from 'css-scroll-snap-polyfill';
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
-
-const Gra = (min, max) => {
-  return Math.random() * (max - min) + min;
-};
 
 
 const Content = () => {
@@ -28,6 +25,7 @@ const Content = () => {
      <section>
      <Header />
             <h1>Section One</h1>
+      <Footer />
           </section>
           <section>
               <h1>Section Two</h1>
@@ -40,6 +38,7 @@ const Content = () => {
           </section>
           <section>
               <h1>Section Five</h1>
+         
           </section>
     </>
   );

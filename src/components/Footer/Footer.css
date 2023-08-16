@@ -1,0 +1,32 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    margin: 30px;
+}
+
+.infos{
+    position: fixed;
+    z-index: 999;
+    bottom: 2%;
+} 
+
+p{
+    color: #251d20;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+    width: 23%;
+    text-align: initial;
+}
+
+a{
+    color: #251d20;
+    text-decoration: underline;
+}
+.check{
+    position: fixed;
+    z-index: 999;
+    right: 4%;
+    bottom: 2%;
+} 
