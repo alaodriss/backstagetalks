@@ -30,8 +30,9 @@ const Content = () => {
             <img src={img} alt={title}/>
             <div className='buy-book'> 
             <h1>{title}</h1>
-            <p>{buy}</p>
+            {/** <p>{buy}</p>
             <span> Selected : {select}</span>
+            */}
             </div>
             <Footer />
           </section>
